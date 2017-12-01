@@ -6,6 +6,7 @@ using System.Web.Mvc;
 
 namespace WebApp.Controllers
 {
+    [HandleError(View = "Error")]
     public class HomeController : Controller
     {
         public ActionResult Index()
