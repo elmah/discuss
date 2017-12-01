@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -26,5 +26,9 @@ namespace WebApp.Controllers
 
             return View();
         }
+
+        // https://groups.google.com/d/msg/elmah/6baNilOnWyk/tPl8rprXBgAJ
+
+        public ActionResult Error() => throw new HttpException(message: "Testing ELMAH");
     }
 }
